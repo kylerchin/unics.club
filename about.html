@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UHS Comp Sci Club</title>
+		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+		<link rel="icon" href="assets/stylesheets/CompSciLogo.png">
+	</head>
+	<body>
+		<header class="container group">
+			<h1 class="logo">
+			<a href="index.html">UHS Computer Science Club</a>
+			</h1>
+		</header>
+		<div class="header" id="myHeader">
+			<h6>
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="board.html">Board</a>
+				<a href="schedule.html">Calendar</a>
+			</h6>
+		</div>
+		<script type="text/javascript">
+			// When the user scrolls the page, execute myFunction 
+			window.onscroll = function() {myFunction()};
+
+			// Get the header
+			var header = document.getElementById("myHeader");
+
+			// Get the offset position of the navbar
+			var sticky = header.offsetTop;
+
+			// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+			}
+		</script>
+		<section class="hero container">
+			<h2>About Us</h2>
+			<p>UHS Computer Science Club participates in various competitions and hackathons and teaches everything from data structures to HTML. We believe that in an increasingly interdisciplinary world, a computer science education is crucial. We welcome members of all levels!</p>
+		</section>
+		<section class="container">
+			<image class="whole" src="assets/stylesheets/Club_Photo_2018.png">
+		</section>
+		<footer class="primary-footer container group">
+			<a href="https://goo.gl/forms/Cl4Gt7L4UR2OEYm13" target="_blank">Report a broken link</a>
+			<p>Contact Us: uhscompsciclub@gmail.com</p>
+			<nav class="nav">
+				<p>Proudly NOT Powered by WordPress</p>
+			</nav>
+		</footer>
+	</body>
+</html>

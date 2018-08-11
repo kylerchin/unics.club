@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UHS Comp Sci Club</title>
+		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+		<link rel="icon" href="assets/stylesheets/CompSciLogo.png">
+	</head>
+	<body>
+		<header class="container group">
+			<h1 class="logo">
+			<a href="index.html">UHS Computer Science Club</a>
+			</h1>
+		</header>
+		<div class="header" id="myHeader">
+			<h6>
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="board.html">Board</a>
+				<a href="schedule.html">Calendar</a>
+			</h6>
+		</div>
+		<script type="text/javascript">
+			// When the user scrolls the page, execute myFunction
+			window.onscroll = function() {myFunction()};
+
+			// Get the header
+			var header = document.getElementById("myHeader");
+
+			// Get the offset position of the navbar
+			var sticky = header.offsetTop;
+
+			// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+			}
+		</script>
+		<section class="hero container">
+			<%=Time.now%>
+		</section>
+		<section class="hero container">
+			<h2>The Official Computer Science Club of University High School</h2>
+			<p>UHS Comp Sci club is a student-run organization dedicated to helping the students of University High School explore their interests in computer science, coding, and algorithms through lessons, competitions, and activities.</p>
+			<a class="btn btn-alt" href="https://goo.gl/forms/YwZdNxoCVDbkgudC3" target="_blank">Join Now</a>
+		</section>
+		<section class="grid">
+			<!-- Speakers -->
+			<section class="teaser col-1-3">
+				<!--<h5>Cooperation</h5>-->
+				<h3>Upcoming Lessons</h3>
+				<p>5/17 - HIATUS</p>
+				<p>5/24 - </p>
+				<p>5/31 - </p>
+				<p>6/7  - </p>
+				<p>6/14 - </p>
+				<p>6/21 - </p>
+				<p>6/28 - </p>
+			</section><!--
+			Schedule
+			--><section class="teaser col-1-3">
+				<!--<h5>Lessons</h5>-->
+				<h3>Upcoming Competitions</h3>
+				<p class="titlex">Google Code Jam</p>
+				<p>Online Round 2</p>
+				<p>Saturday, May 19, 2018 | 14:00 UTC – 16:30 UTC</p>
+				<p class="titlex">Google Code Jam</p>
+				<p>Online Round 3</p>
+				<p>Saturday, June 9, 2018 | 14:00 UTC – 16:30 UTC</p>
+				<p class="titlex">Google Code Jam</p>
+				<p>Onsite Finals</p>
+				<p>Friday, August 10, 2018 | 17:30 UTC – 21:30 UTC</p>
+			</section><!--
+			Venue
+			--><section class="teaser col-1-3">
+				<!--<h5>Competitions</h5>-->
+				<h3>Announcements</h3>
+				<p class="titlex">5/17/2018</p>
+				<p>Hey guys, <br>Reminder that board applications are due in four days, on Sunday May 20th at 11:59 pm! We encourage everyone to apply, since 3/4ths of our board are currently seniors, so there are definitely positions open!<br>Happy coding!</p>
+				<a href="https://docs.google.com/document/d/1bFV1-B1BT97C8Z73NmIk9UdZIzxL-1X2PI-hESdoL7M/edit?usp=drive_web" target="_blank">Board Application</a>
+			</section>
+		</section>
+		<footer class="primary-footer container group">
+			<a href="https://goo.gl/forms/Cl4Gt7L4UR2OEYm13" target="_blank">Report a broken link</a>
+			<p>Contact Us: uhscompsciclub@gmail.com</p>
+			<nav class="nav">
+				<p>Proudly NOT Powered by WordPress</p>
+			</nav>
+		</footer>
+	</body>
+</html>
