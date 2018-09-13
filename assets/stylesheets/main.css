@@ -239,7 +239,7 @@ Home
 	font-weight: 300;
 }
 .titlex {
-	font-size: 50px
+	font-size: 50px;
 	font-weight: 900;
 	text-transform: uppercase;
 	text-decoration: underline;
@@ -255,6 +255,14 @@ a {
 }
 a:hover {
 	color: #a9b2b9;
+}
+h6 a {
+	color: #eaffeb;
+	text-decoration: none;
+	font-weight: bolder;
+}
+h6 a:hover {
+	color: #69aa7d;
 }
 p a {
 	border-bottom: 1px solid #dfe2e5;
@@ -304,7 +312,7 @@ Navigation
   padding: 66px 0 44px 0;
 }
 .theater {
-	margin.bottom: 66px;
+	margin-bottom: 66px;
 }
 /*
 ======
